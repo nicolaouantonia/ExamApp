@@ -1,0 +1,92 @@
+Started by an SCM change
+Running as SYSTEM
+Building in workspace /home/devops/.jenkins/workspace/Package and Local Deployement
+using credential 71cbdcf5-42fa-44ad-b7df-7c97b0cbb9a4
+ > /usr/bin/git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://gitlab.com/candidatename/counterwebproject.git # timeout=10
+Fetching upstream changes from https://gitlab.com/candidatename/counterwebproject.git
+ > /usr/bin/git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > /usr/bin/git fetch --tags --progress https://gitlab.com/candidatename/counterwebproject.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 167eb151f85b09bf8097e045f69e74ad4c44c1fa (refs/remotes/origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 167eb151f85b09bf8097e045f69e74ad4c44c1fa # timeout=10
+Commit message: "index.jsp changed"
+ > /usr/bin/git rev-list --no-walk d3640d98d60670aa30491104eef3a2242a2ad2f5 # timeout=10
+Parsing POMs
+Established TCP socket on 40476
+[Package and Local Deployement] $ java -cp /home/devops/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven33-agent-1.13.jar:/usr/share/maven/boot/plexus-classworlds-2.x.jar:/usr/share/maven/conf/logging jenkins.maven3.agent.Maven33Main /usr/share/maven/ /home/devops/.jenkins/war/WEB-INF/lib/remoting-4.0.jar /home/devops/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven33-interceptor-1.13.jar /home/devops/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.13.jar 40476
+<===[JENKINS REMOTING CAPACITY]===>   channel started
+Executing Maven:  -B -f /home/devops/.jenkins/workspace/Package and Local Deployement/pom.xml package
+[INFO] Scanning for projects...
+[HUDSON] Collecting dependencies info
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CounterWebApp 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ CounterWebApp ---
+[WARNING] Using platform encoding (ANSI_X3.4-1968 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ CounterWebApp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] >>> maven-pmd-plugin:3.7:check (default) > :pmd @ CounterWebApp >>>
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.7:pmd (pmd) @ CounterWebApp ---
+[WARNING] Unable to locate Source XRef to link to - DISABLED
+[WARNING] File encoding has not been set, using platform encoding ANSI_X3.4-1968, i.e. build is platform dependent!
+[INFO] 
+[INFO] <<< maven-pmd-plugin:3.7:check (default) < :pmd @ CounterWebApp <<<
+[INFO] 
+[INFO] --- maven-pmd-plugin:3.7:check (default) @ CounterWebApp ---
+[INFO] You have 7 PMD violations. For more details see: /home/devops/.jenkins/workspace/Package and Local Deployement/target/pmd.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ CounterWebApp ---
+[WARNING] Using platform encoding (ANSI_X3.4-1968 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/devops/.jenkins/workspace/Package and Local Deployement/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ CounterWebApp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ CounterWebApp ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.qaagility.controller.CalcTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.qaagility.controller.CalcTest
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[JENKINS] Recording test results
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ CounterWebApp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [CounterWebApp] in [/home/devops/.jenkins/workspace/Package and Local Deployement/target/CounterWebApp]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/devops/.jenkins/workspace/Package and Local Deployement/src/main/webapp]
+[INFO] Webapp assembled in [108 msecs]
+[INFO] Building war: /home/devops/.jenkins/workspace/Package and Local Deployement/target/CounterWebApp.war
+[INFO] WEB-INF/web.xml already added, skipping
+[WARNING] Attempt to (de-)serialize anonymous class org.jfrog.hudson.maven2.MavenDependenciesRecorder$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.259 s
+[INFO] Finished at: 2020-03-08T07:28:22+00:00
+[INFO] Final Memory: 29M/353M
+[INFO] ------------------------------------------------------------------------
+Waiting for Jenkins to finish collecting data
+[JENKINS] Archiving /home/devops/.jenkins/workspace/Package and Local Deployement/pom.xml to com.qaagility/CounterWebApp/1.0-SNAPSHOT/CounterWebApp-1.0-SNAPSHOT.pom
+[JENKINS] Archiving /home/devops/.jenkins/workspace/Package and Local Deployement/target/CounterWebApp.war to com.qaagility/CounterWebApp/1.0-SNAPSHOT/CounterWebApp-1.0-SNAPSHOT.war
+channel stopped
+[Package and Local Deployement] $ /bin/sh -xe /tmp/jenkins5434667385554107611.sh
++ cp ./target/CounterWebApp.war /home/devops/Downloads/apache-tomcat-9.0.30/webapps/
+Finished: SUCCESS
