@@ -2,12 +2,12 @@ package com.agiletestingalliance;
 
 public class MinMax {
 
-	public int f(int a, int b) {
-		if (b > a) {
-			return b;
+	public int foo(int first, int second) {
+		if (second > first) {
+			return second;
 		}
 		else {
-			return a; 
+			return first; 
 		}
 	}
 
