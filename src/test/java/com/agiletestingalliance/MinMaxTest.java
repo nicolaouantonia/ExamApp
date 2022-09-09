@@ -8,9 +8,16 @@ import static org.junit.Assert.*;
 public class MinMaxTest {
 
 	@Test
-	public void testDesc() throws Exception {
+	public void testFoo() throws Exception {
 		int result = new MinMax().foo(2,3);
-       assertEquals("Sub", result, 3);
+       assertEquals("foo", result, 3);
+
+	}
+
+	@Test
+	public void testBar() throws Exception {
+		int result = new MinMax().bar("an");
+       assertEquals("Bar", result, "an");
 
 	}
 
