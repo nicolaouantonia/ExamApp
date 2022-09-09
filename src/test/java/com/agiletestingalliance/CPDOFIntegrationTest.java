@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.net.URL;
 import org.apache.commons.io.FileUtils;
 
-public class CPDOFSEPFOURIntegrationTest {
+public class CPDOFIntegrationTest {
 
     WebDriver driver;
     String hubURL = null;
