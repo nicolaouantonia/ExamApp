@@ -8,7 +8,7 @@ public class DurationTest {
 
 	@Test
 	public void testDesc() throws Exception {
-		String result = new Duration().desc();
+		String result = new Duration().dur();
         assertTrue("Duration",result.contains("CP-DOF is designed specifically for corporates and working professionals alike."));
 
 	}
