@@ -1,9 +1,9 @@
 package com.agiletestingalliance;
 
-public class Test {
+public class TestString {
 
   String myString = null;
-  public Test(String str) {
+  public TestString(String str) {
     this.myString = str;
 
   }
