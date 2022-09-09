@@ -7,8 +7,5 @@ public class Duration{
     return str;
 
   }
-  public void calculateIntValue() {
-      int i = 5; // Unused
-  }
 
   }
