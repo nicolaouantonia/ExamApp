@@ -15,8 +15,10 @@ public class Usefulness{
 			while (x < 5)
 			      x++;
 
-			for (int i = 0, j = 0; i < 5; i++, j += 2)
+			int j = 0;
+			for (int i = 0; i < 5; i++)
 						   System.out.println(i);
+						   j += 2
 
   }
 
