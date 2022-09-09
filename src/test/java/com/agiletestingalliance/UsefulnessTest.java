@@ -17,8 +17,8 @@ public class UsefulnessTest {
 	 @Test
     public void testServlet() throws Exception {
 
-        StringWriter stringWriter = new StringWriter();
-        PrintWriter writer = new PrintWriter(stringWriter);
+        // StringWriter stringWriter = new StringWriter();
+        // PrintWriter writer = new PrintWriter(stringWriter);
         // when(response.getWriter()).thenReturn(writer);
 
         new Usefulness().functionWF();
