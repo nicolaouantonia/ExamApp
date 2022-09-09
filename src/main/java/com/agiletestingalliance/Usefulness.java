@@ -12,13 +12,15 @@ public class Usefulness{
 		public void functionWF() {
 			int x = 0;
 
-			while (x < 5)
+			while (x < 5) {
 			      x++;
+			}
 
 			int j = 0;
-			for (int i = 0; i < 5; i++)
+			for (int i = 0; i < 5; i++) {
 						   System.out.println(i);
 						   j += 2
+			}
 
   }
 
