@@ -10,8 +10,9 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		 <hubURL>http://10.19.41.68:4444</hubURL>
+		<hubURL>http://10.19.41.68:4444</hubURL>
     	<testURL>http://10.19.41.68:8080/CPDOFSEPFOUR/</testURL>
+		<screenshotLocation>${project.build.directory}/screenshot.png</screenshotLocation>
 		<jdk.version>1.8</jdk.version>
 		<junit.version>4.11</junit.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
