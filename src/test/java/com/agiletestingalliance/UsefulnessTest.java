@@ -23,7 +23,7 @@ public class UsefulnessTest {
 
         new Usefulness().functionWF();
         
-        writer.flush(); // it may not have been flushed yet...
+        // writer.flush(); 
         // System.out.print(stringWriter.toString());
         // assertTrue("MainPage",stringWriter.toString().contains("0"));
     }
