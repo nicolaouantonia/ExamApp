@@ -12,7 +12,7 @@ public class Usefulness{
 			int counter = 0;
 
 			while (counter < 5) {
-			      x++;
+			      counter++;
 			}
 
 			int j = 0;
