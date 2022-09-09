@@ -2,14 +2,14 @@ package com.agiletestingalliance;
 
 public class Test {
 
-  String s = null;
+  String myString = null;
   public Test(String str) {
-    this.s = str;
+    this.myString = str;
 
   }
 
   public String gstr(){
-    System.out.println("String value =" + s);
-    return s;
+    System.out.println("String value =" + myString);
+    return myString;
   }
 }
