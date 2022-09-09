@@ -10,9 +10,9 @@ public class Usefulness{
   	}
 
 		public void functionWF() {
-			int x = 0;
+			int counter = 0;
 
-			while (x < 5) {
+			while (counter < 5) {
 			      x++;
 			}
 
