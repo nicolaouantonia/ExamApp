@@ -15,7 +15,7 @@ public class MinMaxTest {
 	}
 
 	@Test
-	public void testFoo() throws Exception {
+	public void testFoo2() throws Exception {
 		int result = new MinMax().foo(4,3);
        assertEquals("foo", result, 4);
 
@@ -29,7 +29,7 @@ public class MinMaxTest {
 	}
 
 	@Test
-	public void testBar() throws Exception {
+	public void testBar2() throws Exception {
 	  String result = new MinMax().bar("");
        assertEquals("Bar empty", result, "");
 
