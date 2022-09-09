@@ -2,6 +2,7 @@ package com.agiletestingalliance;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.apache.commons.io.FileUtils;
 
 
 public class UsefulnessTest {
