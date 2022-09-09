@@ -9,7 +9,7 @@ public class TestStringTest {
 	@Test
 	public void testDesc() throws Exception {
         String t = new TestString("test").gstr();
-        assertTrue("TestString",result.contains("String value = test"));
+        assertTrue("TestString",result.contains("String value ="));
 
 	}
 

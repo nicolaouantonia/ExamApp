@@ -16,7 +16,7 @@ public class MinMaxTest {
 
 	@Test
 	public void testBar() throws Exception {
-		int result = new MinMax().bar("an");
+	  String result = new MinMax().bar("an");
        assertEquals("Bar", result, "an");
 
 	}
