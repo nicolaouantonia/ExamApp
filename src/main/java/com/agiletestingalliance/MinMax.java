@@ -13,10 +13,10 @@ public class MinMax {
 
 	
 	public String bar(String string) {
-		if (string!=null || !string.equals("")) {
+		if (string!=null || !"".equals(string)) {
 			return string;
 		}
-		if (string==null && string.equals("")) {
+		if (string==null && "".equals(string)) {
 			return string;
 		}
 		return string;
