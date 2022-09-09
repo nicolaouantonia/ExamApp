@@ -4,12 +4,12 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 
-public class AboutTest {
+public class DurationTest {
 
 	@Test
 	public void testDesc() throws Exception {
-		String result = new About().desc();
-        assertTrue("About",result.contains("CP-DOF is designed specifically for corporates and working professionals alike."));
+		String result = new Duration().desc();
+        assertTrue("Duration",result.contains("CP-DOF is designed specifically for corporates and working professionals alike."));
 
 	}
 
